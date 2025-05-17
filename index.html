@@ -1,176 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Da'wah Knowledge Quiz</title>
-  <script>
-    const questions = [
-  {
-    question: "What is the primary goal of Da’wah in Islam?",
-    options: [
-      "To dominate non-Muslims",
-      "To gain political power",
-      "To call people to worship Allah alone",
-      "To increase the Muslim population"
-    ],
-    answer: 2
-  },
-  {
-    question: "Which source should Da’wah be based on?",
-    options: [
-      "Human reason",
-      "Cultural traditions",
-      "Qur’an and Sunnah",
-      "Opinions of scholars only"
-    ],
-    answer: 2
-  },
-  {
-    question: "What is considered the greatest sin in Islam?",
-    options: ["Lying", "Theft", "Shirk (associating partners with Allah)", "Anger"],
-    answer: 2
-  },
-  {
-    question: "Which verse emphasises the purpose of human creation in the context of Da’wah?",
-    options: ["Qur’an 2:255", "Qur’an 51:56", "Qur’an 3:103", "Qur’an 112:1"],
-    answer: 1
-  },
-  {
-    question: "Why should Da’wah be done?",
-    options: ["For recognition", "To obey Allah and follow the Prophet", "To become famous", "To build a business network"],
-    answer: 1
-  },
-  {
-    question: "What did the Prophet (ﷺ) say is better than red camels?",
-    options: ["Wealth", "Fame", "One person guided through you", "A strong army"],
-    answer: 2
-  },
-  {
-    question: "Who is considered a successful person in the context of Da’wah?",
-    options: ["One who memorises the Qur’an", "One who practices Islam silently", "One who invites others to Islam", "One who donates money"],
-    answer: 2
-  },
-  {
-    question: "Which of the following is a benefit of Da’wah?",
-    options: ["Political dominance", "Economic benefit", "Social justice and guidance", "Cultural superiority"],
-    answer: 2
-  },
-  {
-    question: "Who must start Da’wah within their own household first?",
-    options: ["Scholars", "Government officials", "Every Muslim", "Non-Muslims"],
-    answer: 2
-  },
-  {
-    question: "Which term means inviting to the worship of Allah alone?",
-    options: ["Tawheed", "Fiqh", "Ijma", "Ihsan"],
-    answer: 0
-  },
-  {
-    question: "What are the two main sources for Da’wah?",
-    options: ["Qur’an and Bible", "Hadith and cultural wisdom", "Qur’an and authentic Sunnah", "Personal opinions and logic"],
-    answer: 2
-  },
-  {
-    question: "Which message should be prioritised in Da’wah?",
-    options: ["History of Islam", "Muslim traditions", "Tawheed (Oneness of Allah)", "Islamic clothing"],
-    answer: 2
-  },
-  {
-    question: "What quality must a Da‘iyah use when preaching?",
-    options: ["Harsh language", "Public shaming", "Wisdom and good preaching", "Anger and passion"],
-    answer: 2
-  },
-  {
-    question: "Why is it incorrect to use the Bible in Da’wah?",
-    options: ["It’s too complex", "It contains distortions and unauthenticated content", "It's written in Hebrew", "It’s not translated properly"],
-    answer: 1
-  },
-  {
-    question: "What role does compassion play in Da’wah?",
-    options: ["It weakens your message", "It helps you manipulate others", "It attracts hearts to the truth", "It's optional"],
-    answer: 2
-  },
-  {
-    question: "What should a Da‘iyah avoid when quoting hadiths?",
-    options: ["Using long narrations", "Using weak or fabricated hadiths", "Using English translations", "Using Sahih Bukhari only"],
-    answer: 1
-  },
-  {
-    question: "How should you correct misunderstandings about Islam?",
-    options: ["Through media bias", "Through public debates", "By presenting Qur’anic truths clearly", "By ignoring the topic"],
-    answer: 2
-  },
-  {
-    question: "What makes Da’wah effective?",
-    options: ["Loud voice", "Political power", "Correct message and good manners", "Debating scholars"],
-    answer: 2
-  },
-  {
-    question: "What is a danger of relying on human logic alone in Da’wah?",
-    options: ["It makes you sound humble", "It leads to contradictions and misguidance", "It is universally accepted", "It simplifies Islam"],
-    answer: 1
-  },
-  {
-    question: "Who is the best example of a Da‘iyah?",
-    options: ["Your teacher", "A famous debater", "Prophet Muhammad ﷺ", "A local imam"],
-    answer: 2
-  }
-,
-  {
-    question: "What is the most essential intention in Da’wah?",
-    options: ["To become popular", "Sincerity (Ikhlas) for Allah", "To win arguments", "To show off knowledge"],
-    answer: 1
-  },
-  {
-    question: "Which trait helps a Da‘iyah stay committed during hardship?",
-    options: ["Generosity", "Patience and perseverance", "Anger", "Silence"],
-    answer: 1
-  },
-  {
-    question: "How does remembering Allah help a Da‘iyah?",
-    options: ["Helps avoid people", "Strengthens faith and peace of mind", "Causes distraction", "Makes the voice louder"],
-    answer: 1
-  },
-  {
-    question: "What is the effect of trusting Allah in Da’wah?",
-    options: ["Brings fear", "Increases courage and resilience", "Makes one passive", "Avoids effort"],
-    answer: 1
-  },
-  {
-    question: "Why is knowledge important for a Da‘iyah?",
-    options: ["To impress listeners", "To argue effectively", "To convey truth accurately", "To gain fame"],
-    answer: 2
-  },
-  {
-    question: "What should a Da‘iyah do about time?",
-    options: ["Waste it on social media", "Delay Da’wah", "Value and manage it wisely", "Work only at night"],
-    answer: 2
-  },
-  {
-    question: "How does love for Allah benefit Da’wah work?",
-    options: ["Creates wealth", "Inspires devotion and motivation", "Leads to debates", "Shortens tasks"],
-    answer: 1
-  },
-  {
-    question: "Which behaviour must a Da‘iyah avoid?",
-    options: ["Confidence", "Jealousy, hatred, suspicion", "Courage", "Planning"],
-    answer: 1
-  },
-  {
-    question: "What character did the Prophet ﷺ emphasise most?",
-    options: ["Intelligence", "Truthfulness and trustworthiness", "Appearance", "Shouting"],
-    answer: 1
-  },
-  {
-    question: "Which attitude helps maintain balance in Da’wah?",
-    options: ["Aggression", "Moderation", "Extreme isolation", "Overexcitement"],
-    answer: 1
-  }
-];
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main {
+      padding: 1em;
+      text-align: center;
+    }
+    nav button {
+      margin: 0.5em;
+      padding: 0.5em 1em;
+      font-size: 1em;
+    }
+    #quiz-section, #review-section {
+      display: none;
+    }
+    .option-btn {
+      display: block;
+      margin: 1em auto;
+      padding: 1em;
+      width: 80%;
+      max-width: 400px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .correct { background-color: #c8e6c9; border-color: #2e7d32; }
+    .incorrect { background-color: #ffcdd2; border-color: #c62828; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Da'wah Knowledge Quiz</h1>
+    <nav>
+      <button onclick="startQuiz()">Start Quiz</button>
+      <button onclick="showReview()">Review Answers</button>
+      <button onclick="showContent()">Contents</button>
+    </nav>
+  </header>
 
+  <main>
+    <section id="quiz-section">
+      <p id="question"></p>
+      <div id="options"></div>
+    </section>
+
+    <section id="review-section">
+      <h2>Your Answer Review</h2>
+      <ul id="review-list"></ul>
+    </section>
+
+    <section id="content-section">
+      <h2>Chapters Overview</h2>
+      <ul>
+        <li>Chapter 1: Da’wah – Its Rationale and Benefits (Q1–10)</li>
+        <li>Chapter 2: Effective Da’wah through Qur’an and Sunnah (Q11–20)</li>
+        <li>Chapter 3: Characteristics of Du‘at (Q21–30)</li>
+        <li>Chapter 4: Message and Sources of Da’wah (Q31–40)</li>
+        <li>Chapter 5: Methodology and Guidelines (Q41–50)</li>
+        <!-- More to be added -->
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const questions = []; // Already populated earlier
     let currentQuestion = 0;
     let score = 0;
+    let userAnswers = [];
+
+    function startQuiz() {
+      document.getElementById('quiz-section').style.display = 'block';
+      document.getElementById('review-section').style.display = 'none';
+      document.getElementById('content-section').style.display = 'none';
+      currentQuestion = 0;
+      score = 0;
+      userAnswers = [];
+      showQuestion();
+    }
 
     function showQuestion() {
       const q = questions[currentQuestion];
@@ -180,8 +95,8 @@
       q.options.forEach((opt, idx) => {
         const btn = document.createElement("button");
         btn.innerText = opt;
-        btn.onclick = () => checkAnswer(idx, btn);
         btn.className = "option-btn";
+        btn.onclick = () => checkAnswer(idx, btn);
         optionsDiv.appendChild(btn);
       });
     }
@@ -189,15 +104,10 @@
     function checkAnswer(selected, button) {
       const correctIndex = questions[currentQuestion].answer;
       const buttons = document.querySelectorAll(".option-btn");
+      userAnswers.push({ question: questions[currentQuestion].question, selected, correct: correctIndex });
       buttons.forEach((btn, idx) => {
         btn.disabled = true;
-        if (idx === correctIndex) {
-          btn.style.backgroundColor = "#c8e6c9"; // green
-          btn.style.borderColor = "#2e7d32";
-        } else if (idx === selected) {
-          btn.style.backgroundColor = "#ffcdd2"; // red
-          btn.style.borderColor = "#c62828";
-        }
+        btn.className += (idx === correctIndex) ? ' correct' : (idx === selected ? ' incorrect' : '');
       });
       if (selected === correctIndex) score++;
       setTimeout(() => {
@@ -205,43 +115,31 @@
         if (currentQuestion < questions.length) {
           showQuestion();
         } else {
-          document.getElementById("quiz").innerHTML =
+          document.getElementById("quiz-section").innerHTML =
             `<h2>Quiz Complete!</h2><p>Your score: ${score}/${questions.length}</p>`;
         }
       }, 1000);
     }
 
-    window.onload = showQuestion;
+    function showReview() {
+      document.getElementById('quiz-section').style.display = 'none';
+      document.getElementById('review-section').style.display = 'block';
+      document.getElementById('content-section').style.display = 'none';
+      const list = document.getElementById('review-list');
+      list.innerHTML = "";
+      userAnswers.forEach((entry, i) => {
+        const item = document.createElement("li");
+        item.innerText = `Q${i+1}: ${entry.question} → Your answer: ${questions[i].options[entry.selected]} | Correct: ${questions[i].options[entry.correct]}`;
+        item.style.color = entry.selected === entry.correct ? 'green' : 'red';
+        list.appendChild(item);
+      });
+    }
+
+    function showContent() {
+      document.getElementById('quiz-section').style.display = 'none';
+      document.getElementById('review-section').style.display = 'none';
+      document.getElementById('content-section').style.display = 'block';
+    }
   </script>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      background: #f3f3f3;
-      padding: 2em;
-    }
-    #options button {
-      display: block;
-      margin: 1em auto;
-      padding: 1em;
-      width: 80%;
-      max-width: 400px;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-      transition: all 0.3s ease;
-    }
-    #options button:hover {
-      cursor: pointer;
-      background-color: #e0e0e0;
-    }
-  </style>
-</head>
-<body>
-  <div id="quiz">
-    <h1>Da'wah Knowledge Quiz</h1>
-    <p id="question"></p>
-    <div id="options"></div>
-  </div>
 </body>
 </html>
